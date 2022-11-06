@@ -1,276 +1,118 @@
 ---
-name: 'JavaScript'
-groups:
-  - name: "Основы"
-    items:
-      - execution-order
-      - var-let
-      - const
-      - if-else
-      - switch
-      - loop
-      - while
-      - for
-      - expressions-vs-statements
-      - ref-type-vs-value-type
-      - function
-      - closures
-      - use-strict
-  - name: "Продвинутый синтаксис"
-    items:
-      - ternary-operator
-      - spread
-      - for-in
-      - shallow-or-deep-clone
-      - iterator
-      - date
-  - name: "Примитивные типы данных"
-    items:
-      - number
-      - string
-      - boolean
-      - undefined
-      - null-primitive
-      - bigint
-      - symbol
-      - typecasting
-  - name: "Коллекции"
-    items:
-      - object
-      - arrays
-      - function-as-datatype
-      - set
-      - map
-  - name: "Числа"
-    items:
-      - number
-      - parseint
-      - parsefloat
-      - number-wrapper
-      - number-tostring
-      - number-is-nan
-      - number-isfinite
-  - name: "Строки"
-    items:
-      - string
-      - string-wrapper
-      - template-strings
-      - index-of
-      - includes
-      - string-length
-  - name: "Булев тип"
-    items:
-      - boolean
-      - logic-operators
-      - typecasting
-  - name: "Функции"
-    items:
-      - function
-      - return
-      - function-context
-      - closures
-      - recursion
-      - function-arguments-object
-  - name: "Массивы"
-    items:
-      - arrays
-      - array-foreach
-      - array-map
-      - array-reduce
-      - array-filter
-      - array-find
-      - array-find-index
-      - array-flat
-      - array-flatmap
-      - array-every
-      - array-some
-      - array-reverse
-      - includes
-      - index-of
-      - array-length
-      - array-from
-      - array-isarray
-  - name: "Объекты"
-    items:
-      - object
-      - object-tostring
-      - descriptors
-      - objects-objects-everywhere
-  - name : "Множества (`Set`)"
-    items:
-      - set
-      - set-constructor
-      - set-add
-      - set-delete
-      - set-has
-      - set-foreach
-      - set-clear
-      - set-values
-      - set-keys
-      - set-entries
-      - set-size
-  - name: "Обработка исключений"
-    items:
-      - try-catch
-      - errors
-  - name: "`Math`"
-    items:
-      - math
-      - math-floor
-      - math-random
-  - name: "Браузерное окружение и API"
-    items:
-      - bom
-      - dom
-      - fetch
-      - form-data
-      - console-log
-      - window-history
-      - window-location
-      - window-navigator
-      - geolocation-api
-      - match-media
-      - urlsearchparams
-      - local-storage
-      - session-storage
-      - performance
-      - alert
-      - prompt
-      - confirm
-      - queuemicrotask
-      - settimeout
-      - cleartimeout
-      - setinterval
-      - clearinterval
-      - window-print
-      - intersection-observer
-  - name: "О браузере"
-    items:
-      - how-the-browser-creates-pages
-      - coordinates
-      - browsers-storages
-  - name: "Объектная модель документа DOM"
-    items:
-      - dom
-      - element
-      - events
-      - htmlcollection-and-nodelist
-  - name: "Объект страницы (`document`)"
-    items:
-      - element-addeventlistener
-      - element-removeeventlistener
-      - getelementbyid
-      - getelementsbyclassname
-      - getelementsbytagname
-      - query-selector
-      - query-selector-all
-      - forms
-      - cookie
-  - name: "Элемент на странице (`Element`)"
-    items:
-      - element
-      - element-addeventlistener
-      - element-removeeventlistener
-      - getelementsbyclassname
-      - getelementsbytagname
-      - query-selector
-      - query-selector-all
-      - element-getattribute
-      - element-focus
-      - element-blur
-      - element-scrollby
-      - element-scrollintoview
-      - element-scrollto
-      - element-classlist
-      - element-dataset
-      - element-style
-      - element-innerhtml
-      - element-outerhtml
-      - element-innertext
-      - element-textcontent
-      - element-hidden
-  - name: "События"
-    items:
-      - events
-      - event
-      - event-prevent-default
-      - element-click
-      - event-submit
-      - event-domcontentloaded
-      - event-load
-      - event-unload
-      - event-beforeunload
-      - element-keydown
-      - element-keyup
-      - element-mouseout
-      - element-mouseover
-      - element-scroll
-      - element-wheel
-      - element-touch
-  - name: "Хранение данных в браузере"
-    items:
-      - browsers-storages
-      - cookie
-      - local-storage
-      - session-storage
-  - name: "Асинхронный код"
-    items:
-      - async-in-js
-      - promise
-      - promise-then
-      - promise-catch
-      - promise-finally
-      - promise-all
-      - promise-allsettled
-      - promise-any
-      - promise-race
-      - async-await
-  - name: "Обмен данными с API"
-    items:
-      - api
-      - fetch
-      - async-await
-  - name: "Парадигмы программирования"
-    items:
-      - programming-paradigms
-      - oop
-      - fp
-  - name: "Веб-приложение"
-    items:
-      - web-app-types
-      - web-app-works
-      - web-security
-      - language-versions
-      - modules
-      - react-and-alternatives
-      - reactivity
-      - architecture-and-design-patterns
-      - technical-debt
-      - code-style
-  - name: "Архитектура приложения"
-    items:
-      - clean-architecture
-      - architecture-data-flow
-      - architecture-mvc
-      - architecture-and-design-patterns
-      - design-patterns-creational
-      - design-patterns-structural
-      - design-patterns-behaviorial
-  - name: "Тестирование"
-    items:
-      - how-to-test-and-why
-      - tdd
-      - how-to-simplify-tests
-      - testing-and-fake-objects
-      - integration-and-system-testing
-  - name: "Типовые решения"
-    items:
-      - deal-with-forms
-      - infinite-scroll
-      - element-positioning-js
-      - debounce
-      - throttle
+title: "Blur()"
+description: "Событие blur. Пользователь ушел с события focus, потерял фокус и получил событие blur."
+authors:
+- Olik-Olik
+  related:
+- ""
+  tags:
+- doka
 ---
+<!--
+1. В description есть описание для соцсетей и поисковиков, не больше 200 символов
+2. В authors есть ники авторов основного текста
+3. В contributors перечислены ники всех соавторов и тех, кто работал над текстом (дописали «На практике»? Переписали блок? Вам сюда)
+4. В keywords записаны ключевые слова для SEO: пишем сюда слова или фразы, которых нет в тексте статьи, но по ним могут искать этот материал
+5. Удалены все пустые теги в шапке
+6. Подпапка автора есть в папке _people/_
+7. Демки лежат в подпапке _demos/_
+8. В related добавлено три ссылки на материалы Доки, которые будут предлагаться в конце. Не добавляем следующий или предыдущий материал в разделе
+-->
 
-JavaScript — язык программирования широкого спектра. На нём можно как создавать динамические интерфейсы, так и работать с базами данных и операционными системами.
-Основная область применения JavaScript — веб. С его помощью можно обмениваться данными между браузером и сервером, изменять [HTML](/html/) и [CSS](/css/) веб-страницы, создавать веб-приложения.
+## Кратко
+
+##Событие blur
+
+```Пользователь кликает по элементу формы – происходит событие focus. Пользователь ушел с этого элемента в другое  место экрана с помощью мышки или клавиши :tab , происходит потеря фокуса или``` <span style="color:blue">событие blur</span>.
+
+```Наша задача: визуально отследить``` <span style="color:blue"> событие blur</span>.
+
+## Пример
+
+```Визуально проверяем отсутствие фокуса на элементе input.```
+```Есть два  поля ввода "Имя" , "Фамилия" ```.
+```При  выборе элемента "Фамилия"  (событие focus)  документ ``` <span style="color:red"> красный</span>, ``` (при потере фокуса``` <span style="color:blue"> - событие blur)</span> документ <span style="color:green">  зеленый</span> .
+
+###HTML
+```
+<form id = "form">
+
+  <input type = "text" placeholder = "Имя">
+
+  <input type = "text" placeholder = "Фамилия">
+
+</form>
+```
+
+
+
+###JS
+```
+    let form = document.getElementById("form");
+
+    form.addEventListener("focus", function( ) {
+
+        document.body.style.background = 'red'; }, true);
+
+    form.addEventListener("blur", function(  ) {
+
+         document.body.style.background = 'green';},true);
+
+</script>
+```
+
+<img src="/Users/olik/Desktop/2.png" width="60%"/><br>
+При событии <span style="color:blue">focus</span>  документ красный
+<br><br>
+<br>
+<img src="/Users/olik/Desktop/1.png" width="60%"/><br>
+При событии <span style="color:blue">blur</span> документ зеленый
+
+
+##Зачем отслеживать потерю фокуса?
+##Зачем используют <span style="color:blue">blur</span>?
+```В этот момент валидируем введенные данные.```
+
+```Вешать обработчик на форму плохая идея , событие не поймаем,  вариант  ниже```
+**не работает,**
+``` т.к. событие blur(как и focus) не всплываeт.```
+
+##JS
+
+_<script_ _type_ = _"text/javascript">_
+
+_form.onfocus_ = _function()_ _{_
+
+    document.body.style.background = 'red';
+_}_
+
+_form.onblur_ = _function()_ _{_
+
+     document.body.style.background = 'green';
+_}_
+_</script_>
+
+
+##Альтернатива <span style="color:blue">blur</span>:  _focusout_.
+
+###Синтаксис
+
+##JS
+
+```
+<script type="text/javascript">
+
+   form.addEventListener("focusout", function(  ) {
+
+      document.body.style.background = 'green';},true);
+
+</script>
+```
+
+
+
+
+[1]:(../../../Desktop/1.png)(src)
+[2]:(../../../Desktop/2.png)(src)
+<br><br><br><br><br><br>
+```
